@@ -20,8 +20,11 @@ It contains two Python files, "GetPose.py" and "ThreeBox_pose.py," and you need 
 After saving the Python files, you will need to make them as executables and source the "widowx_arm" workspace using the following commands:
 
 $ sudo chmod +x GetPose.py
+
 $ sudo chmod +x ThreeBox_pose.py
+
 $ cd ~/widowx_arm
+
 $ catkin_make
 
 ## Let's launch the arm and run the code:
@@ -33,9 +36,11 @@ $ roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=false
 In another terminal:
 
 $ cd ~/widowx_arm
+
 $ source ./devel/setup.bash
 
 
 $ rosrun tf static_transform_publisher 0 0 0 0 0 0 base_link base_footprint 100
+
 $ rosrun move_group_python_interface ThreeBox_pose.py
 
