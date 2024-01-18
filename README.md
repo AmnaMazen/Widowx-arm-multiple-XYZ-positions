@@ -30,6 +30,7 @@ $ catkin_make
 ## Let's launch the arm and run the code:
 
 $ source ./devel/setup.bash
+
 $ roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=false
 
 
